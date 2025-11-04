@@ -1,17 +1,18 @@
+# src/retrievers/milvus_retriever.py
 from src.retrievers.base_retriever import BaseRetriever
 from pymilvus import connections, Collection
 import numpy as np
 
+# ====== MILVUS RETRIEVER ======
 class MilvusRetriever(BaseRetriever):
+    # Set up
     def __init__(self, host="milvus", port="19530", collection_name="finance_docs"):
         connections.connect(host=host, port=port)
         self.collection = Collection(collection_name)
 
+    # Call encoder for embedding
     def retrieve(self, query: str, top_k: int = 5):
-        # Ici, tu appelleras ton encodeur pour obtenir l'embedding
-        # Exemple (stub) :
         embedding = np.random.rand(768).tolist()
-
         search_params = {"metric_type": "COSINE", "params": {"nprobe": 10}}
         results = self.collection.search(
             data=[embedding],
