@@ -1,0 +1,6 @@
+fastapi==0.121.0
+loguru==0.7.3
+numpy==2.3.4
+prometheus_client==0.21.1
+pymilvus==2.6.2
+sentence_transformers==5.1.2

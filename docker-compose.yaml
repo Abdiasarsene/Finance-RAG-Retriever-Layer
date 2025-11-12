@@ -1,0 +1,21 @@
+services:
+  retriever:
+    build: .
+    container_name: retriever_layer
+    networks:
+      - finance-rag-de_finance-rag-backend
+    volumes:
+      - minio_data:/mnt/minio
+      - elastic_search_data:/mnt/search
+    depends_on:
+      - elastic_search
+
+networks:
+  finance-rag-de_finance-rag-backend:
+    external: true
+
+volumes:
+  minio_data:
+    external: true
+  elastic_search_data:
+    external: true

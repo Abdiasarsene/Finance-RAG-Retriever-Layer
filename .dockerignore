@@ -1,0 +1,12 @@
+# Directories
+__pycache__/
+.pytest_cache/
+tests/
+
+# Files
+.gitignore
+.pre-commit-config.yaml
+docker-compose.yaml
+Makefile
+mypy.ini
+pyproject.toml
