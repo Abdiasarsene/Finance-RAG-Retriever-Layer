@@ -39,7 +39,7 @@ Once the documents are retrieved, the Rankers step in. They first perform a top-
 
 ## 🧩 **Architecture Snapshot**
 
-[Roadmap Retrieval Layer](./statics/retriever_layer.png)
+[Roadmap Retrieval Layer](./statics/retrieval_layer.png)
 
 ---
 
