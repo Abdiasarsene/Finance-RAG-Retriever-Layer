@@ -55,9 +55,10 @@ Unit and integration tests validate the integrity and cohesion of each module:
 ---
 
 ---
+
 ## 🚀 **Next Modules**
 
-* **Finance-RAG-LLM-Integration**
+* **[Finance-RAG-LLM-Integration](https://github.com/Abdiasarsene/Finance-RAG-LLM-Integration)**
 * **Finance-RAG-Agents**
 * **Finance-RAG-Serving-API**
 * **Finance-RAG-LLMops**
